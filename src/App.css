@@ -1,0 +1,130 @@
+.App-header {
+  background-color: #F0EFE9;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-main-bg {
+  background-color: white;
+  width: 340px;
+  padding: 0 0 14px 0;
+  border-radius: 5px;
+}
+
+.todo-main-bg hr {
+  border: 0.7px solid rgb(200, 209, 228);
+}
+
+.data-section {
+  padding: 11px 11px 11px 10px;
+}
+
+.todo-item {
+  color: #282c34;
+  margin: 10px;
+  border-radius: 5px;
+  width: 290px;
+  display: inline-flex;
+  padding-left: 10px;
+  background-color: white;
+  font-size: calc(10px + 1vmin);
+  cursor: pointer;
+  transition: ease-in 300ms;
+  align-items: center;
+}
+
+.todo-item:hover {
+  color: white;
+  background-color: #282c34d2;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.todo-item:hover .item-name {
+  color: white;
+  transition: ease-in 300ms;
+}
+
+.todo-item .item-name {
+  text-decoration: line-through;
+  color: #4B5363;
+}
+
+.todo-item input {
+  margin-left: auto;
+  margin-right: 15px;
+  right: 0;
+  color: red !important;
+}
+
+.add-section {
+  display: flex;
+  margin-bottom: -39px;
+}
+
+.add-section .add-item {
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 100px;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+  background-color: #31BC80;
+}
+
+.add-item p {
+  color: whitesmoke;
+  margin: 6px 0 0 0;
+  font-size: 26px;
+}
+
+.time-section {
+  font-family: sans-serif;
+  background-color: #414143;
+  border-radius: 5px 5px 0 0;
+  display: flex;
+  height: 70px;
+  color: #F0EFE9;
+}
+
+.time-section .section1 {
+  margin-left: 18px;
+  display: flex;
+}
+
+.time-section .section1 .sub1 p{
+  margin-top: 15px;
+  font-size: 2.55em;
+  font-weight: 500;
+}
+
+.time-section .section1 .sub2{
+  margin-left: 5px;
+}
+
+.time-section .section1 .sub2 p:first-child{
+  margin-top: 23px;
+  font-size: .56em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.time-section .section1 .sub2 p:last-child{
+  margin: 0;
+  font-size: .7em;
+}
+
+.time-section .section2 {
+  margin-right: 18px;
+  margin-left: auto;
+}
+
+.time-section .section2 p{
+  margin-top: 28px;
+  font-size: 1.12em;
+  font-weight: 500;
+}
