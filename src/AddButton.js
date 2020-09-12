@@ -1,12 +1,13 @@
 import React from 'react'
+import {Button} from 'react-bootstrap'
 import './App.css'
 
 const Addbutton = () => {
     return (
         <div className='add-section'>
-            <div className='add-item'>
+            <Button className='add-item'>
                 <p>+</p>
-            </div>
+            </Button>
         </div>
     )
 }

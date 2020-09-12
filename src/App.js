@@ -35,7 +35,7 @@ class App extends Component {
       <div className='App-header'>
         <div className='todo-main-bg'>
           <TimeSection/>
-          <div className='data-section'>
+          <div className='p-3 align-items-center'>
           {TodosData}
           </div>
          < AddButton/>

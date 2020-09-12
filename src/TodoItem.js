@@ -1,26 +1,30 @@
 import React from 'react'
 import './App.css'
-import {Form} from 'react-bootstrap'
+import { Container, Row, FormCheck } from 'react-bootstrap'
 
-function TodoItem({todo, handleChange}) {
+function TodoItem({ todo, handleChange }) {
     return (
-        <div>
-            <div className='todo-item'>
-                {
-                    todo.completed ?  <p className='item-name'>{todo.name}</p> :  <p>{todo.name}</p>
-                }
-                <Form.Check
-                    custom
-                    type='checkbox'
-                    id='custom-checkbox'
-                    label='rem'
-                   
-                />
-                {/* <input type="checkbox" checked={todo.completed} onChange = {() => handleChange(todo.id)} /> */}
-            </div>
-        
-        </div>
-
+        <Container className='todo-item' onClick={() => {
+            handleChange(todo.id)
+            console.log(todo.id)
+        }}>
+            <Row>
+                <div className='ml-2'>
+                    {
+                        todo.completed ? <p className='item-name'>{todo.name}</p> : <p>{todo.name}</p>
+                    }
+                </div>
+                <div className='ml-auto mr-2'>
+                    <FormCheck
+                        checked={todo.completed}
+                        type='checkbox'
+                        id='customControlAutosizing'
+                        label=' '
+                        custom
+                    />
+                </div>
+            </Row>
+        </Container>
     );
 }
 
